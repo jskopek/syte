@@ -2,14 +2,14 @@
 
 import os
 
-DEPLOYMENT_MODE = os.environment.get("ENVIRONMENT", 'dev')
+DEPLOYMENT_MODE = os.environ.get("ENVIRONMENT", 'dev')
 COMPRESS_REVISION_NUMBER = '1.0'
 
 
 #Blog Integration: Tumblr
 TUMBLR_BLOG_URL = 'skopek.tumblr.com'
 TUMBLR_API_URL = 'http://api.tumblr.com/v2/blog/{0}'.format(TUMBLR_BLOG_URL)
-TUMBLR_API_KEY = os.environment.get("TUMBLR_API_KEY")
+TUMBLR_API_KEY = os.environ.get("TUMBLR_API_KEY")
 
 #RSS Feed Integration: (by default use Tumbrl rss feed)
 RSS_FEED_ENABLED = True
@@ -18,20 +18,20 @@ RSS_FEED_URL = 'http://{0}/rss'.format(TUMBLR_BLOG_URL)
 #Twitter Integration
 TWITTER_INTEGRATION_ENABLED = True
 TWITTER_API_URL = 'https://api.twitter.com/'
-TWITTER_CONSUMER_KEY = os.environment.get('TWITTER_CONSUMER_KEY')
-TWITTER_CONSUMER_SECRET = os.environment.get('TWITTER_CONSUMER_SECRET')
-TWITTER_USER_KEY = os.environment.get('TWITTER_USER_KEY')
-TWITTER_USER_SECRET = os.environment.get('TWITTER_USER_SECRET')
+TWITTER_CONSUMER_KEY = os.environ.get('TWITTER_CONSUMER_KEY')
+TWITTER_CONSUMER_SECRET = os.environ.get('TWITTER_CONSUMER_SECRET')
+TWITTER_USER_KEY = os.environ.get('TWITTER_USER_KEY')
+TWITTER_USER_SECRET = os.environ.get('TWITTER_USER_SECRET')
 
 
 #Github Integration
 GITHUB_INTEGRATION_ENABLED = True
 GITHUB_API_URL = 'https://api.github.com/'
-GITHUB_ACCESS_TOKEN = os.environment.get('GITHUB_ACCESS_TOKEN')
+GITHUB_ACCESS_TOKEN = os.environ.get('GITHUB_ACCESS_TOKEN')
 
 GITHUB_OAUTH_ENABLED = False
-GITHUB_CLIENT_ID = os.environment.get('GITHUB_CLIENT_ID')
-GITHUB_CLIENT_SECRET = os.environment.get('GITHUB_CLIENT_SECRET')
+GITHUB_CLIENT_ID = os.environ.get('GITHUB_CLIENT_ID')
+GITHUB_CLIENT_SECRET = os.environ.get('GITHUB_CLIENT_SECRET')
 GITHUB_OAUTH_AUTHORIZE_URL = 'https://github.com/login/oauth/authorize'
 GITHUB_OAUTH_ACCESS_TOKEN_URL = 'https://github.com/login/oauth/access_token'
 
@@ -68,7 +68,7 @@ FOURSQUARE_OAUTH_ACCESS_TOKEN_URL = 'https://foursquare.com/oauth2/access_token'
 
 
 #Google Analytics
-GOOGLE_ANALYTICS_TRACKING_ID = os.environment.get('GOOGLE_ANALYTICS_TRACKING_ID')
+GOOGLE_ANALYTICS_TRACKING_ID = os.environ.get('GOOGLE_ANALYTICS_TRACKING_ID')
 
 
 #Woopra
@@ -86,7 +86,7 @@ DISQUS_SHORTNAME = ''
 #Lastfm Integration
 LASTFM_INTEGRATION_ENABLED = True
 LASTFM_API_URL = 'http://ws.audioscrobbler.com/2.0/'
-LASTFM_API_KEY = os.environment.get('LASTFM_API_KEY')
+LASTFM_API_KEY = os.environ.get('LASTFM_API_KEY')
 
 #SoundCloud Integration
 SOUNDCLOUD_INTEGRATION_ENABLED = False
