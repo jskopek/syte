@@ -116,6 +116,6 @@ if DEPLOYMENT_MODE == 'dev':
     DEBUG = True
 else:
     DEBUG = False
-    SITE_ROOT_URI = 'http://jeanmarc.skopek.ca'
+    SITE_ROOT_URI = 'http://jeanmarc.skopek.ca/'
 
 MEDIA_URL = SITE_ROOT_URI + 'static/'
